@@ -2,17 +2,17 @@
 
 # Required secrets.
 
-`*AWS_ACCESS_KEY_ID=user key id
+`AWS_ACCESS_KEY_ID=user key id`
 
-*AWS_SECRET_ACCESS_KEY=user secret key
+`AWS_SECRET_ACCESS_KEY=user secret key`
 
-AWS_REGION=user region
+`AWS_REGION=user region`
 
-S3_BUCKET=name of the bucket
+`S3_BUCKET=name of the bucket`
 
-SSH_KEY=.pem file as base64 string`
+`SSH_KEY=.pem file as base64 string`
 
-# * - aws user's security credentials save on creation.
+# aws user's security credentials save on creation.
 
 # For deploy key you will need to generate new ssh key in your instance and add to your repo
 
