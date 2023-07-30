@@ -62,14 +62,55 @@
 
   - Install jq package `sudo apt install -y jq`
 
-  
+# 4. Create load balancer
 
-    
+ For the load balancer create target group
+
+ ![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/3a9674d2-3b5e-46ea-8829-b7e9110180d6)
+
+![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/3e9c7b18-ab06-4fcd-a1c6-3e893a9c1a71)
+
+ `api/health-check` will be your app controller with this endpoint. (create if doesn't exist)
+
+![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/2016a8da-bbd5-40f9-894a-af4111ae85ec)
+
+ -> Create target group
+
+ Back to load balancer 
+
+ ![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/1874570f-20ab-43fb-a67c-01f0d008f778)
+
+Pick 3 availability zones
+
+![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/8794afdd-f771-4d4d-a2a1-6af26151d2a3)
+
+  ![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/3c37e456-886d-4540-b125-e5760c87d542)
+
+  ![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/7a3b2f9f-349f-4adf-b4d3-ff53841f688f)
+
+Create -> Go to the balancer
+  
+Edit listeners and rules
+
+![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/48016e07-7a7b-44b8-8ff5-f421cfddc35d)
+
+![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/b9166b0c-f452-4691-9890-d4bd49f952b0)
+
+ # Add certificate to port 443
+
+ Second port `80`  
+
+ ![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/a36e5a0b-6e5c-4304-8c9b-abdcd6740514)
+
+ No certificate required
+
+ Go to balancer -> security -> security group (click by id)
+ Configure the following ports
+
+![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/18283402-b6d4-4087-a79d-248be5af5b71)
 
 
-  
+ 
 
-  
-  
 
-  
+ 
