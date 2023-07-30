@@ -1,7 +1,7 @@
 #!/bin/bash
 
-AWS_SECRET_ID="non-gagecertificat-secrets"
-AWS_REGION="eu-north-1"
+AWS_SECRET_ID=your aws secret name
+AWS_REGION=
 ENVFILE="./.env"
 
 # Export the secret to .env
