@@ -40,5 +40,8 @@
 
       # Add SSL certificate and description as `redirect` to see the difference between distros.
       
+For every distribution add origin for both example.ua and www.example.ua s3 buckets.
 
+For example.ua (now www e.g redirect) add Error pages like the following
 
+![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/7f9ce31a-66ef-4cfa-8581-a1356ccf467a)
