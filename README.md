@@ -1,6 +1,6 @@
 # AWS deploy-guide 
 1. [S3 buckets](https://github.com/Flowerinno/deploy-guide/blob/main/S3.md)
-2. Certificates
+2. [Certificates](https://github.com/Flowerinno/deploy-guide/blob/main/Certificates.md)
 3. [Cloud front](https://github.com/Flowerinno/deploy-guide/blob/main/CloudFront.md)
 4. [Instance (load balancer, elastik IP)](https://github.com/Flowerinno/deploy-guide/blob/main/Instance.md)
 5. [RDS database](https://github.com/Flowerinno/deploy-guide/blob/main/RDS.md)
