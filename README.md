@@ -4,8 +4,9 @@
 3. [Cloud front](https://github.com/Flowerinno/deploy-guide/blob/main/CloudFront.md)
 4. [EC2 (instance, load balancer, elastic IP)](https://github.com/Flowerinno/deploy-guide/blob/main/EC2.md)
 5. [RDS database](https://github.com/Flowerinno/deploy-guide/blob/main/RDS.md)
-6. [Secrets Manager](https://github.com/Flowerinno/deploy-guide/blob/main/Secrets.md)
-7. [Secret keys for Github repository](https://github.com/Flowerinno/deploy-guide/blob/main/Secret-keys.md)
+6. [Hosted zones (Route 53)](https://github.com/Flowerinno/deploy-guide/blob/main/HostedZones.md)
+7. [Secrets Manager](https://github.com/Flowerinno/deploy-guide/blob/main/Secrets.md)
+8. [Secret keys for Github repository](https://github.com/Flowerinno/deploy-guide/blob/main/Secret-keys.md)
 
 
 generate-env-file.sh, ecosystem.config.js are files to automate your deployment process. 
