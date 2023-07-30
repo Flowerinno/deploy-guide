@@ -60,6 +60,8 @@
     
     (Probably will need to install zip/unzip packages to unpack)
 
+  - Install jq package `sudo apt install -y jq`
+
   
 
     
