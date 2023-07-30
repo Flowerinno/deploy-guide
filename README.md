@@ -8,3 +8,4 @@
 7. [Secrets Manager](https://github.com/Flowerinno/deploy-guide/blob/main/Secrets.md)
 
 
+# generate-env-file.sh, ecosystem.config.js are files to automate your deployment process. For github actions folder with necessary commands (CI/CD) ask your PM or Tech Lead, or else where ;)  
