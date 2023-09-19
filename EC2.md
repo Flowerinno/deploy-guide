@@ -1,26 +1,25 @@
+
 # EC2
 
 
-# 1. Create instance !! Don't forget to pick correct region !! 
-
- ![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/0764a1b7-8907-4c76-a208-bdad14ee20b8)
-   
+### 1. Create instance !! Don't forget to pick correct region !! 
+![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/0764a1b7-8907-4c76-a208-bdad14ee20b8)
  ![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/e9e6db86-6d5a-401e-aad1-122949783741)
 
  
   1.1 Create Key pair 
-      ![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/bd433d29-6402-4555-a5af-f5c69830b5a0)
+     ![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/bd433d29-6402-4555-a5af-f5c69830b5a0)
   
+  ###  !IMPORTANT You will need this file, don't lose it (example-application.pem)  
   ![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/1b6daf65-4dae-46e2-aec8-eab6ab3dfa40)
 
+  1.2  Configure storage
+  ![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/5ed0872f-623f-46b3-9a3b-706b96f97c73)
 
-  # !IMPORTANT You will need this file, don't lose it (example-application.pem)
+###  2. Create Elastic IP and assign to your instance to have static ip
 
-  1.2 ![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/5ed0872f-623f-46b3-9a3b-706b96f97c73)
-
-# 2. Create Elastic IP and assign to your instance to have static ip
-
-  2.1 ![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/79855e9a-4e39-4d0f-a26a-e6f2c0911cd3)
+  2.1 Allocate Elastic IP
+  ![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/79855e9a-4e39-4d0f-a26a-e6f2c0911cd3)
 
   2.2 Go to created elastic ip and allocate it
 
@@ -28,15 +27,15 @@
 
   ![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/395227cb-4749-433d-98e5-0618fe6597f3)
 
-  # -> Associate // Now your instance ip will be static
+  ### -> Associate // Now your instance ip will be static
 
-# 3. Pick your instance and click `Connect` 
+###  3. Pick your instance and click `Connect` 
 
   ![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/16cb8f36-be7d-43fe-a168-d78ef6d59934)
 
    3.1 You will need to SSH into this instance to install node.js, pm2 , aws cli, jb
 
-  # Place your `example-application.pem` file in your server root folder to be able to SSH into the instance. (You'll have another name of the file)
+  ###  Place your `example-application.pem` file in your server root folder to be able to SSH into the instance. (You'll have another name of the file)
 
   Give your .pem file proper permissions with command (if linux) - `chmod 400 example-application.pem`
 
@@ -62,7 +61,10 @@
 
   - Install jq package `sudo apt install -y jq`
 
-# 4. Create load balancer
+### Run command:
+`aws configure`  - paste Client Id & Secret Key & Region
+
+###  4. Create load balancer
 
  For the load balancer create target group
 
@@ -96,7 +98,7 @@ Edit listeners and rules
 
 ![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/b9166b0c-f452-4691-9890-d4bd49f952b0)
 
- # Add certificate to port 443
+ ###  Add certificate to port 443
 
  Second port `80`  
 
