@@ -49,11 +49,7 @@
 
   - Install PM2 `sudo npm i pm2 -g`
     
-  - Install NODE (check your version locally to avoid problems) https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04
-
-  You will need this section for node installation
-
-  ![image](https://github.com/Flowerinno/deploy-guide/assets/93313212/1d3a6610-c732-42fe-a32f-3c4dca789307)
+  - Install NODE (check your version locally to avoid problems) [https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04](https://github.com/nodesource/distributions/blob/master/README.md#debian-and-ubuntu-based-distributions)
 
   - Install AWS CLI  https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
     
